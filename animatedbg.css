@@ -11,9 +11,11 @@ body {
      font-family:monospace;
  }  
 
-.bg {
+ .bg {
+     /* connects to slide @keyframe*/
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, #6c3  50%, #09f 50%);
+    /*setting position property to relative*/
     bottom:0;
     left:-50%;
     opacity:.5;
@@ -22,8 +24,9 @@ body {
     top:0;
     z-index:-1;
 }
-
-.bg2 {
+/*both bg2 and bg3 are relative to bg */
+ .bg2 {
+     /*sets position property relative to .bg*/
     animation-direction:alternate-reverse;
     animation-duration:4s;
 }
@@ -31,7 +34,7 @@ body {
 .bg3 {
     animation-duration:5s;
 }
-
+/*the box in the center*/
 .content {
     background-color:rgba(255,255,255,.8);
     border-radius:.25em;
@@ -47,6 +50,7 @@ body {
 
 @keyframes slide {
     0% {
+	/*moves object along x axis -1/4 */
 	transform:translateX(-25%);
     }
     100% {
