@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang= "en">
   <head>
-    <link rel="stylesheet" type="text/css" href="links.css">
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <link rel="stylesheet" type="text/css" href="../../assets/links.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/styles.css"> 
     <meta charset="UTF-8">
     
     <title>Fingerprints-Pranav Krishnan</title>
@@ -60,7 +60,7 @@
     <h4>Flowchart</h4>
     <br>
     <div>
-      <img src="QGJ9lOi.jpg" alt="Flow Chart">
+      <img src="../../assets/fingerprints_flow.jpg" alt="Flow Chart">
     </div>
    
     <br>
