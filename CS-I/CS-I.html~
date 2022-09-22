@@ -1,10 +1,8 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link rel="stylesheet" type="text/css" href="assets/links.css">
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/links.css">
+  <link rel="stylesheet" type="text/css" href="../assets/style.css">
   <meta charset="UTF-8">
   <title>Advanced Computer Science 1</title>
   <style>
@@ -16,12 +14,18 @@
   <header>
     <nav>
       <ul>
-	<li><a href="index.html">Index</a></li>
-	<li><a href="aboutMe.html">AboutMe</a></li>
-	<li><a href="directory.html">Directory</a></li>
-	<li><a href="cs1.html">CS-I</a></li>
-	<li><a href="CS-II.html">CS-II</a></li>
-	<li><a href="references.html">References</a></li>
+
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../aboutMe.html">AboutMe</a></li>
+	<li><a href="../directory.html">Directory</a></li>
+	<li><a href="CS-I.html">CS-I</a></li>
+	<li><a href="../CS-II/CS-II.html">CS-II</a></li>
+	<li><a href="../Stats/Stats.html">CS-II</a></li>
+	<li><a href="../references.html">References</a></li>
+
+
+
+	
 	
       </ul>
     </nav>
