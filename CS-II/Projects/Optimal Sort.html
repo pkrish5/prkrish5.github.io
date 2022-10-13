@@ -9,7 +9,7 @@
     <style>
       img {
 
-	  border: 5px solid black;
+	  border: 5px solid grey;
 
       }
       .center {
@@ -20,29 +20,50 @@
       } 
     h3{
 	text-align: center;
-	
+	font-size: 30px;
     }
     h4{
 	text-align: center;
+	font-size: 30px;
     }
+    
     body {
 	text-align: center;
     }
     div {
-	text-align: center;
+
     }
     h6{
+	
 	font-size: 1.3em;
 	text-align: center;
+    }
+    .smallcenter {
+	display: block;
+	margin-left: 15%;
+	margin-right: auto;
+	width: 30%;     
     }
     .apa-reference {
 	padding-left: 36px;
 	text-indent: -36px;
     }
+    p{
+	text-align: left;
+	font-size: 25px;
+	margin-left: 20%;
+
+	margin-right: 20%;
+    }
+    div{
+	margin-left: 27%;
+	font-size: 10px;
+	
+    }
   </style>
   </head>
   <body>
-  <h3>Optimal Sort Project</h3>
+  <h3>Optimal Sort Group Project</h3>
     <header>
       
       <nav>
@@ -61,34 +82,76 @@
     </header>
 
     
-  <p>Pranav Krishnan</p>
-  <p>Allen ISD Steam Center</p>
-      <p>Advanced Computer Science 2</p>
-  <p>Mr. Benyakov</p>
-  <p>September 16, 2022</p>
   <p>Group members: Boden Chen, Omer Erturk, Aryan Kulkarni and Pranav Krishnan</p>
+
   <br>
-  <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPu4oMhG4EPxyfOZmadWSrfR4L0lhUZCchAzFyJFuOJKxU1KR4NT5GSXKEzR51u3kMYGKZyZdk-i-V/pubhtml">Testing Spreadsheet</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPu4oMhG4EPxyfOZmadWSrfR4L0lhUZCchAzFyJFuOJKxU1KR4NT5GSXKEzR51u3kMYGKZyZdk-i-V/pubhtml">Alphabetical Sort Testing Spreadsheet</a>
   <br>
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Boden-C/alphabetical-sort">Git Hub repository</a> 
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/Boden-C/alphabetical-sort">Git Hub repository for Alphabetical Sort</a> 
     <br>
 
-    <h4>Flowchart</h4>
+    <h4>Flowchart for Alphabetical Sort</h4>
     <br>
     <div>
-      <img src="flowchart.svg" alt="Flow Chart">
+      <img class="smallcenter"src="flowchart.svg" alt="Flow Chart">
     </div>
-   
+
+    <h4>Graph and Table for All Sorts</h4>
     <br>
     <br>
     <br>
+    <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQOHsmjxQnS2hpRJnkDQi0U3_OSsyztNjf9sQDbqf2fN4oNZ4vyN_D1Vw6eknyp8I3zoLb6d4Xldx0P/pubhtml">All Sorts Testing Spreadsheet</a> 
     <br>
     <br>
     <br>
+    <img src="InsertionSortGraph.png" alt="Insertion Sort" width="30%">
+    <br>
+  <p>&nbsp &nbsp This is a line graph for Insertion Sort that displays the exponential nature of the insertion sort’s speed at sorting words. From 1 to 1000 words it takes less than 50 ms for all three of the orders. After 10,000 words the Ordered is significantly faster, for 10k words it only takes 790 ms on average, and for 100,000 words it takes 61,000 ms. The reversed and random take much longer for 10K and 100K words, for 10K it takes around 3,500 ms for reversed and 2,000 for random. When we hit 100K words it gets much slower, reversed is 301,000 ms on average, and random is 226,300 ms on average. This significant increase makes this graph exponential and explains that Insertion sort is very efficient for smaller values and ordered lists but inefficient for random and reversed lists of 10K+ words.</p>
+    
+    <br>
+    
+    <img src="SelectionSort.png" alt="Selection Sort" width="30%">    
+    
+    <br>
+  <p>&nbsp &nbsp This is a line graph of Selection Sort and is almost identical to Insertion sort because they are both very similar in the way that they sort data. Insertion sort goes one element at a time and inserts the lower value in front of the higher value and goes through many stages of unsorted arrays. Selection sort selects the smallest element one element at a time and moves it to the right place and searches the remaining data, this is slightly less efficient than insertion sort but took much less time than the Insertion Sort in my trials.</p>
+  <br>
+  <img src="BubbleSort.png" alt="Bubble Sort" width="30%">
+    <br>
+  <p>&nbsp &nbsp This is a line graph for Bubble sort, as you can see the slope is very similar for a small number of words but there is only a value for ordered sort for the 100 thousand words because the time limit was exceeded for the random and reversed text. This displays how inneficcent bubble sort is for large lists but it is very efficient for small amounts of words. You should only use bubble sort for lists under 1000 words and for more efficiency below 100 would be best because bubble sort individually compares each word and takes much longer than insertion or selection sort.</p>
+    
+    <br>
+    <img src="AlphabeticalSort.png" alt="Alphabetical Sort" width="30%"> 
+    <br>
+  <p>&nbsp &nbsp Our Alphabetical sort varies widely with speed with different word counts with one word being almost instant like the other sorts but when it hits 100 words the difference seems large between reversed and random/ordered sorts if you look closely you will see that the max is 300 ms while the last 3 graphs had a max of 300K milliseconds so the exponential nature of the graphs was very apparent. This graph shows how the randomly sorted text has a steady increase whereas the other 2 text file types had a large jump at 100 words and were steady from there till 100K.</p>
+    <br>
+    <h4>Hypothesis</h4>
+    <br>
+  <p>&nbsp &nbsp All the graphs are almost identical for 1-1000 words and you can see the real difference after 1K, all the graphs have an exponential increase after those thousand words. The only sort that is recursive is Alphabetical Sort which sorts a lot faster than any of the other sorting algorithms because of that. The two stable sorts are Bubble sort and insertion sort which make the equivalent elements retain their relative positions, after sorting. Stable sorts are generally slower than unstable sorts which are proved in the table when you compare bubble and insertion sort times to the selection and alphabetical sort. The speed of a sort is determined by the number of passes, it takes to sort some sorts are more efficient for a smaller amount of words and others take less time for larger amounts, like our alphabetical sort.</p>
     <br>
     <br>
     <br>
+    <h6>The Code on Github</h6>
     <br>
-    <br> 
+    <div>
+    <p>
+    -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/BubbleSort">Repository for Bubble Sort</a>
+    <br>
+    -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/InsertionSort">Repository for Insertion Sort</a>
+    <br>
+    -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/SelectionSort">Repository for Selection Sort</a>
+    <br>
+    -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/alphabetical-sort">Repository for Alphabetical Sort</a>
+    <br>
+    </p>
+    </div>
+  <h6>All the spreadsheets in one place</h6>
+  <div>
+  <p>
+  <br>
+  -<a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQOHsmjxQnS2hpRJnkDQi0U3_OSsyztNjf9sQDbqf2fN4oNZ4vyN_D1Vw6eknyp8I3zoLb6d4Xldx0P/pubhtml">All Sorts Testing Spreadsheet</a>
+  <br>
+  -<a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPu4oMhG4EPxyfOZmadWSrfR4L0lhUZCchAzFyJFuOJKxU1KR4NT5GSXKEzR51u3kMYGKZyZdk-i-V/pubhtml">Alphabetical Sort Testing Spreadsheet</a>
+  </p>
+  </div>
   </body>
   </html>
