@@ -114,45 +114,56 @@
     <img src="SelectionSort.png" alt="Selection Sort" width="30%">    
     
     <br>
-  <p>&nbsp &nbsp This is a line graph of Selection Sort and is almost identical to Insertion sort because they are both very similar in the way that they sort data. Insertion sort goes one element at a time and inserts the lower value in front of the higher value and goes through many stages of unsorted arrays. Selection sort selects the smallest element one element at a time and moves it to the right place and searches the remaining data, this is slightly less efficient than insertion sort but took much less time than the Insertion Sort in my trials.</p>
+  <p>&nbsp &nbsp This is a line graph of Selection Sort and is almost identical to Insertion sort because they are both very similar in the way that they sort data. Insertion sort goes one element at a time and inserts the lower value in front of the higher value and goes through many stages of unsorted arrays. Selection sort selects the smallest element one element at a time and moves it to the right place and searches the remaining data, this is slightly less efficient than insertion sort but took much less time than the Insertion Sort in my trials. Values are continuously checked to see if they are less than the value of the previous element, and keep being swapped if true It goes through mutile runs through the data till its fully sorted. The reason all of these graphs look similar from the best case of ordered and worst the reverse sort is because in  all three cases the time complexity of selection sort is O(n*2).</p>
   <br>
   <img src="BubbleSort.png" alt="Bubble Sort" width="30%">
     <br>
-  <p>&nbsp &nbsp This is a line graph for Bubble sort, as you can see the slope is very similar for a small number of words but there is only a value for ordered sort for the 100 thousand words because the time limit was exceeded for the random and reversed text. This displays how inneficcent bubble sort is for large lists but it is very efficient for small amounts of words. You should only use bubble sort for lists under 1000 words and for more efficiency below 100 would be best because bubble sort individually compares each word and takes much longer than insertion or selection sort.</p>
+  <p>&nbsp &nbsp This is a line graph for Bubble sort, as you can see the slope is very similar for a small number of words but there is only a value for ordered sort for the 100 thousand words because the time limit was exceeded for the random and reversed text. This displays how inneficcent bubble sort is for large lists but it is very efficient for small amounts of words. You should only use bubble sort for lists under 1000 words and for more efficiency below 100 would be best because bubble sort individually compares each word and takes much longer than insertion or selection sort. This Sort is considered the simplest sorining algothem which  iterating through each elemnent of the array, starting at index 1. It goes through each element of the array and checks if the previous value is bigger, this goes on untill it is fully sorted.</p>
     
     <br>
     <img src="AlphabeticalSort.png" alt="Alphabetical Sort" width="30%"> 
     <br>
-  <p>&nbsp &nbsp Our Alphabetical sort varies widely with speed with different word counts with one word being almost instant like the other sorts but when it hits 100 words the difference seems large between reversed and random/ordered sorts if you look closely you will see that the max is 300 ms while the last 3 graphs had a max of 300K milliseconds so the exponential nature of the graphs was very apparent. This graph shows how the randomly sorted text has a steady increase whereas the other 2 text file types had a large jump at 100 words and were steady from there till 100K.</p>
+  <p>&nbsp &nbsp Our Alphabetical sort varies widely with speed with different word counts with one word being almost instant like the other sorts but when it hits 100 words the difference seems large between reversed and random/ordered sorts if you look closely you will see that the max is 300 ms while the last 3 graphs had a max of 300K milliseconds so the exponential nature of the graphs was very apparent. This graph shows how the randomly sorted text has a steady increase whereas the other 2 text file types had a large jump at 100 words and were steady from there till 100K. </p>
     <br>
     <h4>Hypothesis</h4>
     <br>
-  <p>&nbsp &nbsp All the graphs are almost identical for 1-1000 words and you can see the real difference after 1K, all the graphs have an exponential increase after those thousand words. The only sort that is recursive is Alphabetical Sort which sorts a lot faster than any of the other sorting algorithms because of that. The two stable sorts are Bubble sort and insertion sort which make the equivalent elements retain their relative positions, after sorting. Stable sorts are generally slower than unstable sorts which are proved in the table when you compare bubble and insertion sort times to the selection and alphabetical sort. The speed of a sort is determined by the number of passes, it takes to sort some sorts are more efficient for a smaller amount of words and others take less time for larger amounts, like our alphabetical sort.</p>
+  <p>&nbsp &nbsp All the graphs are almost identical for 1-1000 words and you can see the real difference after 1K, all the graphs have an exponential increase after those thousand words. The only sort that is recursive is Alphabetical Sort which sorts a lot faster than any of the other sorting algorithms because of that. The two stable sorts are Bubble sort and insertion sort which make the equivalent elements retain their relative positions, after sorting. Stable sorts are generally slower than unstable sorts which are proved in the table when you compare bubble and insertion sort times to the selection and alphabetical sort. The speed of a sort is determined by the number of passes, it takes to sort some sorts are more efficient for a smaller amount of words and others take less time for larger amounts, like our alphabetical sort.The selection sort is the only algorithm among these four to have a best case scenario time complexity of O(n^2) which is not even close in comparison of my sort witch has a time complexity of worst case running time of O(n+b) and best case T(n) = d(n+b0). The sort that we created is much better in comarisosn to these standard sort as proved in the timings of the tests and the time complexity of the sorts.</p>
     <br>
     <br>
     <br>
     <h6>The Code on Github</h6>
-    <br>
     <div>
     <p>
     -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/BubbleSort">Repository for Bubble Sort</a>
     <br>
+    <br>
     -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/InsertionSort">Repository for Insertion Sort</a>
+    <br>
     <br>
     -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/SelectionSort">Repository for Selection Sort</a>
     <br>
+    <br>
     -<a target="_blank" rel="noopener noreferrer" href="https://github.com/PranavKrishnan05/alphabetical-sort">Repository for Alphabetical Sort</a>
+    <br>
     <br>
     </p>
     </div>
   <h6>All the spreadsheets in one place</h6>
   <div>
   <p>
-  <br>
-  -<a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQOHsmjxQnS2hpRJnkDQi0U3_OSsyztNjf9sQDbqf2fN4oNZ4vyN_D1Vw6eknyp8I3zoLb6d4Xldx0P/pubhtml">All Sorts Testing Spreadsheet</a>
+    -<a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQOHsmjxQnS2hpRJnkDQi0U3_OSsyztNjf9sQDbqf2fN4oNZ4vyN_D1Vw6eknyp8I3zoLb6d4Xldx0P/pubhtml">Testing Spreadsheet For All The Sorts</a>
+    <br>
+    <br>
+    -<a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQOHsmjxQnS2hpRJnkDQi0U3_OSsyztNjf9sQDbqf2fN4oNZ4vyN_D1Vw6eknyp8I3zoLb6d4Xldx0P/pubhtml?gid=432425393&single=true">Spreadsheet With a Summary of All The Sorts</a>  
+    <br>
   <br>
   -<a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQPu4oMhG4EPxyfOZmadWSrfR4L0lhUZCchAzFyJFuOJKxU1KR4NT5GSXKEzR51u3kMYGKZyZdk-i-V/pubhtml">Alphabetical Sort Testing Spreadsheet</a>
+  <br>
+  
   </p>
+  <br>
+  <br>
+  <br>
   </div>
   </body>
   </html>
