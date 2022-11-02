@@ -9,15 +9,11 @@ body {
     height: 125vh;
     margin-top: 80px;
     padding: 30px;
-    /*background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
-	/*background: linear-gradient(-20deg, grey, lightgrey, white);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	*/
-	
+    background: linear-gradient(-20deg, white, white, lightgrey, grey);
+    background-size: 100% 110%;
+    min-height: 125vh;
+    background-repeat: no-repeat;
+}
 
 	
 }
