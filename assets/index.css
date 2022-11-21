@@ -27,15 +27,16 @@ main {
 header {
     font-family: sans-serif;
     position: fixed;
-    background-color: #C5C5C5;
+
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
     display: flex;
     align-items: center;
+    font-size: 18px;
     box-shadow: 0 0 25px 0 black;
-    font-size:18px;
+
 }
 header * {
     display: inline;
@@ -49,11 +50,13 @@ header li {
     display: inline-block;
     position: relative;
     font-weight: 550;
+
 }
 
 header li a {
     color: black;
     text-decoration: none;
+
 }
 header li a::before{
     content: '';
@@ -61,7 +64,7 @@ header li a::before{
     height: 3px;
     margin-left: 50%;
     width: 0%;
-    background-color: #8F00FF;
+    background-color: black;
     position: absolute;
     bottom: 0;
     transition: all ease-in-out 300ms;
@@ -76,6 +79,6 @@ header li a:hover::before{
     display: block;
     height: 3px;
     width: 100%;
-    background-color: #8F00FF;
+    background-color: black;
     bottom: 0;
 }
