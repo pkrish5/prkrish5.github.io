@@ -11,14 +11,3 @@ body{
 
 }
 
-.essay{
-    text-indent: 45px;
-    margin-left: 25vh;
-    margin-right: 25vh;
-    text-align: left;
-    line-height: 2;
-    max-width:1000px;
-    padding-left:20vw;
-    padding-right:20vw;
-    margin:auto;
-}
