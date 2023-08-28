@@ -3,80 +3,13 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../../assets/links.css">
     <link rel="stylesheet" type="text/css" href="../../assets/styles.css"> 
+    <link rel="stylesheet" href="essayformat.css">
+
     <meta charset="UTF-8">
     
     <title>Advanced Sort-Pranav Krishnan</title>
     <link rel="icon" href="../../assets/pranavkrishnanlogo.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        h2 {
-            margin-top: 30px;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-      img {
 
-	  border: 5px solid grey;
-
-      }
-      .center {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 90%;
-      } 
-    h3{
-	text-align: center;
-	font-size: 30px;
-    }
-    h4{
-	text-align: center;
-	font-size: 30px;
-    }
-    
-    body {
-	text-align: center;
-    }
-    h6{
-	
-	font-size: 1.3em;
-	text-align: center;
-    }
-    .smallcenter {
-	display: block;
-	margin-left: 15%;
-	margin-right: auto;
-	width: 30%;     
-    }
-    .apa-reference {
-	padding-left: 36px;
-	text-indent: -36px;
-    }
-    p{
-	text-align: left;
-	font-size: 25px;
-	margin-left: 20%;
-
-	margin-right: 20%;
-    }
-    div{
-	margin-left: 27%;
-	font-size: 10px;
-	
-    }
-  </style>
   </head>
   <body>
   <h3></h3>
@@ -99,54 +32,97 @@
 
     </header>
     <body>
-        <h1>Sorting Algorithm Comparison</h1>
+        <br>
+        <h2 class="generalText">Advanced Sorting Algorithm Analysis</h2>
+        <h4 class="centertxt">A Brief Description of Merge Sort, Quick Sort and Heap Sort</h4>
+
+        <br>
+
+        <p class="centertxt">Pranav Krishnan<br><br>
+        Allen High School<br><br>
+        Advanced Computer Science III<br><br>
+        Mr. Ben-Yaakov<br><br>
+          August 30, 2023<br><br><br></p>
+      
+        
+        <!-- Merge Sort -->
+        <section>
+            <h4 class="essayHeader">Merge Sort</h4>
+            <p class="essay">
+                Merge Sort is a divide-and-conquer algorithm that divides into multiple sub-arrays continuously and the sub-arrays are combined to form a final array. Using the Divide and conquer technique the algorithm divides a problem into subproblems recursively and once each subproblem is ready it combines the answers to solve the main problem. For example, if we had to sort an array (Numbers). A sub-problem would be where we sort a smaller section of this array starting at index I and ending at index r, this could be denoted by Array[i..r]. So the first part is to Divide: Create duplicate copies of sub-arrays of the original array then Conquer so we sort the sub-arrays, if we haven't reached the base case we divide the sub-arrays again and try to sort them. Then once we reach the base case we combine the sorted sub-arrays. Below is an example from Proramiz that visualizes Merge Sort in a nice way. 
+            </p>
 
 
+            <br>
+            <img src="merge-two-sorted-arrays.png" class="centeredImage" alt="merge-two-sorted-arrays">
+            <p class="essayHeader"> It has a time complexity of O(n log n) and a space complexity of O(n).</p>
+            <br><br>
+        </section>
+    
+        <!-- Quicksort -->
         <section>
-            <h2>Merge Sort</h2>
-            <p>
-                Merge Sort is a divide-and-conquer algorithm that divides an array into two halves, recursively sorts each half, and then merges the sorted halves.
-                It has a time complexity of O(n log n) and a space complexity of O(n).
+            <h4 class="essayHeader">Quicksort</h4>
+            <p class="essay">
+                Quicksort is another divide-and-conquer sorting algorithm that selects a pivot element from an array and arranges elements smaller than the pivot on the left and larger elements on the right. This process continues over and over recursively until subarrays with single elements are obtained, resulting in a sorted array. The pivot selection can change usually being the element on the far right often. The algorithm then rearranges the array by comparing elements to the pivot and placing them in the correct position, and this process is repeated until elements are sorted within subarrays. The algorithm's steps involve selecting a pivot, rearranging the array, dividing subarrays recursively, and using a partition function for element swapping. Below is another diagram from Proramiz that visualizes Quick Sort in a neat way. 
             </p>
+
+            <br>
+            <img src="quick-sort-1.png" class="centeredImage" alt="sorted-arrays">
+            <img src="quick-sort-2.png" class="centeredImage" alt="sorted-arrays">
+            <p class="essayHeader">Quicksort's time complexity is best & average case O(nlog n) and worst-case O(n^2) with space complexity of O(log n)</p>
         </section>
     
+        <!-- Heapsort -->
         <section>
-            <h2>Quicksort</h2>
-            <p>
-                Quicksort is a divide-and-conquer algorithm that selects a 'pivot' element and partitions the array into two sub-arrays - elements less than the pivot and elements greater than the pivot.
-                These sub-arrays are then recursively sorted. Quicksort has an average time complexity of O(n log n), but its worst-case time complexity can be O(n^2).
-                It typically has better average performance than Merge Sort due to smaller constant factors. Its space complexity is O(log n) due to the recursive call stack.
+            <h4 class="essayHeader">Heapsort</h4>
+            <p class="essay">
+                Heap Sort is a ubiquitous and efficient sorting algorithm that uses arrays and trees. The algorithm begins with an unsorted array and converts it into a sorted array using a binary tree structure called a heap (pictured below). The binary tree allows for relationships between array indexes and tree elements, which are necessary to run the algorithm. The algorithm tries to  "heapify" the tree, turning it into a max-heap where each parent value is larger than its child value. you can view a nice diagram of a max vs min heap below. This involves repeatedly comparing and swapping elements to ensure the max-heap property. The algorithm builds the max-heap from the bottom up, then swaps the root element with the last element and performs heapify to sort the array. It is used in real life with embedded systems and security-focused systems. Below is the comparison between the max and min heap aswell as a visual representation of the heap sort algorithm by programiz. 
+
             </p>
+            <br>
+            <img src="max-heap-min-heap.png" class="centeredImage" alt="sorted-arrays">
+            <br>
+            <img src="heap_sort.png" class="centeredImage" alt="sorted-arrays">
+            <p class="essayHeader">Heap Sort's time complexity is O(n*log n) for all cases, with a space complexity of O(1).</p>
+            <br>
+
         </section>
-    
+        <br>
+        <!-- Performance Comparison -->
         <section>
-            <h2>Heapsort</h2>
-            <p>
-                Heapsort uses a binary heap data structure to build a heap and then repeatedly extracts the maximum element (in case of max-heap) to sort the array.
-                It has a guaranteed worst-case time complexity of O(n log n) and a space complexity of O(1) since it sorts the array in place.
-                However, constant factors in the runtime can make it slower than Merge Sort or Quicksort for small datasets.
-            </p>
+            <h4 class="essayHeader">Performance Comparison (Time Complexity Comparison)</h4>
+            <p class="essay">
+                Merge Sort is known for its reliable and consistent performance, as it maintains a stable time complexity of O(n log n). On the other hand, Quicksort, while faster on average, has the potential to encounter situations where its time complexity significantly slows because of its worst-case scenario. This worst-case in Quicksort's performance can stem from its use of the pivot selection strategy. Contrarily, Heapsort, though usually slower than both Merge Sort and Quicksort in practical applications due to some constant factors, provides a consistent O(n log n) time complexity regardless of data distribution. This makes Heapsort a great option in scenarios where reliability and predictability in sorting performance are important.            </p>
         </section>
-    
+        <br>
+        <!-- Space Complexity Comparison -->
         <section>
-            <h2>Performance Comparison</h2>
-            <p> - Merge Sort generally provides stable performance with its O(n log n) time complexity.</p>
-               <p> - Quicksort is faster on average, but its worst-case time complexity can lead to performance degradation.</p>
-               <p>- Heapsort is slower than the other two in practice due to constant factors, but it guarantees O(n log n) time complexity. </p>
-        </section>
-    
-        <section>
-            <h2>Space Complexity Comparison</h2>
-            <p>
-                - Merge Sort and Heapsort both have space complexities of O(n) and O(1) respectively, making them more memory-efficient for larger datasets.
-                - Quicksort's space complexity varies depending on the implementation, but it generally requires O(log n) space for the recursive call stack.
+            <h4 class="essayHeader">Space Complexity Comparison</h4>
+            <p class="essay">
+                Merge Sort and Heapsort exhibit differing space complexities, with Merge Sort having O(n) space and Heapsort operating with a space efficiency of O(1), making them better choices for managing memory when sorting large datasets. Merge Sort's space complexity corresponds to its need for auxiliary memory during the merging phase when temporary arrays are used to merge sorted subarrays as efficiently as possible. On the contrary, Heapsort's consistent O(1) space usage stems from its use of heaps, enabling the algorithm to perform sorting operations without needing extra memory allocation. With Quicksort, its space complexity shows an intricate relationship with its recursive structure. Although Quicksort's space usage is normally listed as O(log n) due to the logarithmic depth of the recursive stack, it's crucial to recognize the nuances that can affect this assessment. Variations in pivot selection strategies, optimization techniques, and specific implementations can lead to changes in space complexity. Thus, Quicksort's memory usage exhibits a fluid nature, caused by algorithmic decisions and the specific code. This dynamic space characteristic shows Quicksort's adaptability to different scenarios, this means you should also consider that this could be at the cost of a potentially higher memory demand under specific circumstances.
+
             </p>
         </section>
     
         <footer>
-            <h2>References</h2>
-            <p>OpenAI. (2021). GPT-3.5 [Language model]. OpenAI. https://openai.com/</p>
+            <br><br>
+            <div class="cited">
+                <p>References</p>
+                <br>
+                </div>
+              
+            <p class="hanging">OpenAI. (2021). GPT-3.5 [Language model]. OpenAI. https://openai.com/</p>
+            <p class="hanging">Bhatta, R. (2022). Merge Sort Algorithim. Programiz. Retrieved August 30, 2023, from https://www.programiz.com/dsa/merge-sort 
+            </p>
+            <p class="hanging">Bhatta, R. (2022). Quick sort algorithm. Programiz. Retrieved August 30, 2023, from https://www.programiz.com/dsa/quick-sort
+            </p>
+            <p class="hanging">Bhatta, R. (2022). Heap sort algorithm. Programiz. Retrieved August 30, 2023, from https://www.programiz.com/dsa/heap-sort 
+            </p>
+            
+            <br><br>
+
         </footer>
+    
     </body>
+    
     </html>
- 

@@ -1,0 +1,126 @@
+h1{
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+}
+
+button:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+td{
+    text-align: center;
+    border-collapse: collapse;
+    *width:1%;
+}
+
+h2{
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+}
+
+h3{
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+}
+
+h4{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+p{
+    font-family: Arial, sans-serif;
+}
+
+
+figcaption{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.centeredImage {
+    display: block;
+    margin: 0 auto;
+    height: auto; /* Adjust the height as needed */
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.essay{
+    text-indent: 50px;
+    line-height: 2;
+    margin-right: 25%;
+    margin-left: 25%;
+    *text-align: center;
+}
+
+.generalText{
+    margin-left:10%;
+    margin-right:10%;
+    line-height: 1.5;
+    *text-indent: 25px;
+    *font-size:18px;
+}
+
+.generalHeader{
+    margin-left: 10%;
+    line-height: 1;
+    
+}
+
+.essayHeader{
+    *text-align: center;
+    margin-left: 25%;
+}
+
+.cited{
+    text-align: center;
+    
+    
+}
+
+.bottom{
+    position: fixed;
+    bottom: -16px;
+    text-align: right;
+    height: 30px;
+    width: 97%;
+    background-color: powderblue;	    
+}
+
+.hanging{
+    padding: 10px;
+    padding-left: 64px;
+    text-indent: -60px;
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 2;
+    
+}
+
+.linkbarblue{
+    background-color: #30D3EA;
+}
+
+.centertxt{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
