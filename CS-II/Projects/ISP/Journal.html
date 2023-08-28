@@ -76,30 +76,30 @@
 
 
       @media only screen and (max-width: 1200px) {
-	  .sideBySide {
-	      grid-template-columns: repeat(1, 100%);
-	      align-items: left;
-	  }
-	  .gridItem {
-	      text-align: left ;
-	  }
+      .sideBySide {
+      grid-template-columns: repeat(1, 100%);
+      align-items: left;
+      }
+      .gridItem {
+      text-align: left ;
+      }
 
-	  .centertxt {
-	      text-align: left;
-	  }
+      .centertxt {
+      text-align: left;
+      }
       }
 
       .smalltxt {
-	  font-size: 17px;
+      font-size: 17px;
       }
-        
+      
       
     </style>
   </head>
   <body>
     <h1>ISP Journals</h1>
     <br>
-       <header>
+    <header>
       <nav>
 	<ul>
 	  <li><a href="../../../index.html">Index</a></li>
@@ -113,21 +113,169 @@
 	</ul>
       </nav>
     </header>
-       <br>
-       <hr>
-       <h2 class="generalText">23-Jan-2023</h2>
-       <h3 class="generalText">Technical Challenges:</h4>
-<p class="smallText">&emsp;&emsp;Net RC still not working. Project manager had a busy week and couldnt distribute the API Key to all of our team members. Luckily we were able to figure out how to use gps location for a map.</p>
+    <br>
+
+    <!--
+	<hr>
+	<h2 class="generalText">17-Apr-2023</h2>
+	<br>
+	<h3 class="generalText">Significant Achievements</h3>
+
+	<br>
+	<a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/55" target="_blank" >Closed another Issue with a comment that was fixed my large commit this week- 17 </a>
+	<br>
+	<br>
+	<a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/72" target="_blank">Created an issue that was created by commit to mapkit branch that needs to be resolved- 18 </a>
+	<br>
+	<br>
+	<a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/73" target="_blank">Created an issue for combining the json file idea proposed by our Project manager with what I added in my commit that we are currently using for holding the location data (I added multiple images so that our members without macs could still view what I was talking about without having to run the code on the school macs- 19 </a></p>
+<br>
+<br>
+<a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/80d4db261e5404bbeb0c83aa7d3c4a037e2e844a" target="_blank">Added the bottom sheet and interactive buttons- 20</a>
+<br>
+<br>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;In the latest commit to <a href="mapkit:https://github.com/CSAllenISD/2023-ISP ShelterSafe/commit/6fb85af9b29de98390153ad0288786e83a0bd8ce" target="_blank" >Mapkit Commits</a> we created LocationsViewModel as the place for all of our info about shelters images and details to be held but we need to make this compatible with the json file through Json parsing or possibly just changing the way we want to organize the shelters to the LocationsViewModel itself instead of the json all together. We also struggled With the new implementation of Mapkit we are having issues with displaying the current user location as the old command uiView.showsUserLocation = true isnt working now.</p>
+
+
 
 <h3 class="generalText">Scheduling Challenges:</h3>
-<p class="smallText">&emsp;&emsp;SQL learning/ quiz took time away from in class colaberation, we overcame thi by having discord calls to work after school when we had free time.</p>
+<p class="smallText">&emsp;&emsp;Our team has had a very busy week this week school wise so it was mostly only a few of us working on the project. others didnt make time to work on our isp</p>
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We have gotten over the hump where we would argue over decisions but we are working like a well oiled machine with minimal interpersonal issues </p>
+<hr>
+-->
+<hr>
+<h2 class="generalText">10-Apr-2023</h2>
+<br>
+<h3 class="generalText">Significant Achievements</h3>
+
+<p><a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/6fb85af9b29de98390153ad0288786e83a0bd8ce" target="_blank"  >Github commit - 14, My largest Commit yet, I Fully revamped the Map, added images, markers a whole new list view and more info panel, also added better animations/transtions</a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/62" target="_blank">Closed Github Issue with comment regarding my large commit for this week that slove the issue - 15 </a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/59" target="_blank">Closed another Issue with a comment that was fixed my large commit this week- 16 </a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/55" target="_blank" >Closed another Issue with a comment that was fixed my large commit this week- 17 </a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/72" target="_blank">Created an issue that was created by commit to mapkit branch that needs to be resolved- 18 </a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/73" target="_blank">Created an issue for combining the json file idea proposed by our Project manager with what I added in my commit that we are currently using for holding the location data (I added multiple images so that our members without macs could still view what I was talking about without having to run the code on the school macs- 19 </a></p>
+<br>
+<br>
+
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;In the latest commit to <a href="mapkit:https://github.com/CSAllenISD/2023-ISP ShelterSafe/commit/6fb85af9b29de98390153ad0288786e83a0bd8ce" target="_blank" >Mapkit Commits</a> we created LocationsViewModel as the place for all of our info about shelters images and details to be held but we need to make this compatible with the json file through Json parsing or possibly just changing the way we want to organize the shelters to the LocationsViewModel itself instead of the json all together. We also struggled with With the new implementation of Mapkit we are having issues with displaying the current user location as the old command uiView.showsUserLocation = true isnt working now.</p>
+
+
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Our team has had a very busy week this week school wise so it was mostly only a few of us working on the project. others didnt make time to work on our isp</p>
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We have gotten over the hump where we would argue over decisions but we are working like a well oiled machine with minimal interpersonal issues </p>
+<hr>       
+<hr>
+<h2 class="generalText">03-Apr-2023</h2>
+<br>
+<h3 class="generalText">Significant Achievements</h3>
+
+<p><a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/0b49e9c88be16b2168b6031ab8e6c7be3b6fae47" target="_blank">Github commit - 12 </a> 
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/81400206993907aff0d1c99a01a05950bc27a159" target="_blank">Github Issue - 11 </a> 
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/8feb4094fd1cdb10ed51982127fbc7981f05928f" target="_blank">Github commit - 10 </a>
+  <br>
+  <br>
+  <h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Today, we encountered a technical challenge where implementing UIKit is necessary for the app to become more interactive and allow users to click on the markers. We are brainstorming on how to integrate this into our app without affecting its overall functionality.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;This week, we faced some scheduling challenges due to our teacher, Mr. Ben, being out on Wednesday and Thursday. Fortunately, we were able to use the time to catch up on our tasks and work independently. Additionally, we had Friday off due to a school holiday, giving us some extra time to work on the project.</b>
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;The team has been working well together, and there havent been any significant conflicts this week. Were consistently communicating and collaborating, and were making great progress towards our shared goal of completing the Swift UI app with MapKit.</p>
+<hr>  
+<hr>
+<h2 class="generalText">27-Mar-2023</h2>
+<br>
+<h3 class="generalText">Significant Achievements</h3>
+
+<p><a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/5ed7ffac2cb11286ab9f266b966bd96cdfd6149f" target="_blank" >Github commit - 9: allowed to receive tap events on annotations conforming to Annotation InteractionDelegate (and setting yourself as the delegate on the manager).</a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/issues/62">Github Issue - 8 Add Interactive annotations to the map using point with the MapView’s AnnotationOrchestrator</a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/27e94b6b0fd539c1afeb7a68e784fb3cc4282f18" target="_blank" >Github commit - 7 Refactor code to enable clickable and movable annotation markers with enhanced user interactivity and engagement</a></p>       
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;UIKit implementation is required for us to create more interactivity to this app through allowing for us to click the markers</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;None this week</b>
 
 <h3 class="generalText">Interpersonal Challenges:</h4>
-<p class="smallText">&emsp;&emsp;We argued over what the most viable product would be up until friday then we came to an agreement so we could still carry on working without this argument inhibiting our progress.</p>
-<hr> 
-	<hr>
-	<h2 class="generalText">16-Jan-2023</h2>
-	<h3 class="generalText">Technical Challenges:</h4>
+<p class="smallText">&emsp;&emsp;No significant conflicts we are working together as a team pretty well now</p>
+<hr>  
+<hr>
+<h2 class="generalText">20-Mar-2023</h2>
+<br>
+<h3 class="generalText">Significant Achievements</h3>
+
+<p><a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/655cc8bc1a410319f20d2da45aeda39b4031fc2d" target="_blank"  >Github commit - 6(Massive commit took the whole week)</a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/3dc9e3005c5fe90990da08eb5b8dc620393d608e" target="_blank"  >Github Merge - 5 </a>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/ef8d60e7bba3fbd6fcf4340b29d50b36b3b51a03" target="_blank"  >Github commit - 4</a>
+</p>
+
+<br>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Net RC still not working. We need a file in mac home directory with API key and it is dificult to give the key to all the memebers.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Mr ben is absent and some of our members are attending the cyber security competition in maryland.</b>
+
+<h3 class="generalText">Interpersonal Challenges:</h4>
+<p class="smallText">&emsp;&emsp;none this week</p>
+<hr>
+<hr>
+<h2 class="generalText">13-Mar-2023</h2>
+<br>
+<h3 class="generalText">Significant Achievements</h3>
+
+<p><a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/ef2898a5e03775384685b552706920627518a070" target="_blank"  >Github commit - 3: ReProtected safe area after the merging issues with main (not alot of code in this one but it allows for more surface area in our map and it solved an issue that were created.</a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/bbb760cc1f7fdbaab67d91f60a43d4871a46c476" target="_blank"  >Github Issue - 2 </a>
+  <br>
+  <br>
+  <a href="https://github.com/CSAllenISD/2023-ISP-ShelterSafe/commit/64e12041d40747ceedc5dae03d1359e5d3663db6" target="_blank" >Github commit - 1, Fixed Marker icon image, sizing & placement so it is viewable and gives us an idea of what the shelter icons will look like when are able to have live updates to the map.</a></p>
+
+<br> 
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;map box functionality isnt up to qa and release managers standards</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Spring break halted progress to an extent because we all needed a short refresh</p>
+
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;There was a lot of disagreemant on roles so we decided to have a team meeting to decide what roles each person would get and who would take up multiple postitons. There was also   ome disagreement in the UIs apperence but we came to an agreement on what the color scheme would be and how the app would be layed out.</p>
+
+
+<hr>                                             
+<h2 class="generalText">8-Mar-2023</h2>
+<h3 class="generalText">Technical Challenges:</h4>
 <p class="smallText">&emsp;&emsp;Net RC not working. We need a file in mac home directory with API key and it is dificult to give the key to all the memebers.</p>
 
 <h3 class="generalText">Scheduling Challenges:</h3>
@@ -137,8 +285,75 @@
 <p class="smallText">&emsp;&emsp;Due to a conflict with my best freind who is part of the team we were not able to work together initialy but our project manager was able to get us on task working together.</p>
 <hr>
 <hr>
-	<h2 class="generalText">9-Jan-2023</h2>
-	<h3 class="generalText">Technical Challenges:</h3>
+<h2 class="generalText">1-Mar-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Xcode did not work on the school computers so out members could not work on the project unless they had their own mac which only 4 of us did. The map would not fit in our tab view limiting the functionality of out product at the moment. We are also wroking on the UI for the app which doesnt have functional buttons but we have multiple tabs.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Due to our team being split into multiple classes across A and B days we need to find a way for us to work collaboratively outside of school to complete our ISP in time and have a
+  functional product. We had a team meeting and out Project manager wasnt able to attend the meeting and we needed to reschedule it for next week.</p>
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;There was a lot of disagreemant on roles so we decided to have a team meeting to decide what roles each person would get and who would take up multiple postitons. There was also some disagreement in the UIs apperence but we came to an agreement on what the color scheme would be and how the app would be layed out.</p>
+
+
+<hr>                                             
+<h2 class="generalText">22-Feb-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Cant pull current loction to use for JSON file that we use for getting weather disaters near us.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We all had only 3 days this week so we needed to work at home on discord</p>
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;With merge error we all got I at one of our team members so we ensure that he would be able to work in out own branches and then merge that with main</p>
+<hr> 
+<br>
+<h2 class="generalText">15-Feb-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Map box camera view didnt work but this issue was resolved and we are now able have some functionality.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We all had a lot of tests so we needed to work at home on discord</p>
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We were able to come together and assign all the roles and  figure out tasks for each member</p>
+<hr>
+
+<hr>
+<h2 class="generalText">8-Feb-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;WHile using map box the camera view does not auto move to current location and the user has to scroll around the earth till they see the blue marker signialing their location. The readMe also got destroyed because of some packages so we had to remake it.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Snow days from Tues-Friday, no time to work colaberativly in class on the isp, we need to use discord to call and work on the isp together.</p>      
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We had an argument about everyone not doing work so we decided to change the rolls up a bit to fix this.</p>
+<hr>
+
+<hr>
+<h2 class="generalText">23-Jan-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;Net RC still not working. Project manager had a busy week and couldnt distribute the API Key to all of our team members. Luckily we were able to figure out how to use gps location for a map.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;SQL learning/ quiz took time away from in class colaberation, we overcame thi by having discord calls to work after school when we had free time.</p>
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We argued over what the most viable product would be up until friday then we came to an agreement so we could still carry on working without this argument inhibiting our progress.</p>
+<hr> 
+<hr>
+<h2 class="generalText">16-Jan-2023</h2>
+<h3 class="generalText">Technical Challenges:</h4>
+<p class="smallText">&emsp;&emsp;Net RC not working. We need a file in mac home directory with API key and it is dificult to give the key to all the memebers.</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
+<p class="smallText">&emsp;&emsp;We were expecting to be able to work in class but we need to do some SQL introductions with Mr.Ben.</p>
+
+<h3 class="generalText">Interpersonal Challenges:</h4>
+<p class="smallText">&emsp;&emsp;Due to a conflict with my best freind who is part of the team we were not able to work together initialy but our project manager was able to get us on task working together.</p>
+<hr>
+<hr>
+<h2 class="generalText">9-Jan-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
 <p class="smallText">&emsp;&emsp;Xcode did not work on the school computers so out members could not work on the project unless they had their own mac which only 4 of us did. The map would not fit in our tab view limiting the functionality of out product at the moment. We are also wroking on the UI for the app which doesnt have functional buttons but we have multiple tabs.</p>
 
 <h3 class="generalText">Scheduling Challenges:</h3>
@@ -149,33 +364,33 @@
 
 
 <hr>      
-	<hr>
-	<h2 class="generalText">2-Jan-2023</h2>
-	<h3 class="generalText">Technical Challenges:</h3>
-    <p class="smallText">&emsp;&emsp;None</p>
-    
-    <h3 class="generalText">Scheduling Challenges:</h3>
+<hr>
+<h2 class="generalText">2-Jan-2023</h2>
+<h3 class="generalText">Technical Challenges:</h3>
+<p class="smallText">&emsp;&emsp;None</p>
+
+<h3 class="generalText">Scheduling Challenges:</h3>
 <p class="smallText">&emsp;&emsp;Due to our team being split into multiple classes across A and B days we need to find a way for us to work collaboratively outside of school to complete our ISP in time and have a functional product.</p>
-    
-    <h3 class="generalText">Interpersonal Challenges:</h3>
-    <p class="smallText">&emsp;&emsp;None</p>
-    
-    <h3 class="generalText">Roles:</h4>
-    <h3 class="generalText">(Software) Development Engineer</h3>
+
+<h3 class="generalText">Interpersonal Challenges:</h3>
+<p class="smallText">&emsp;&emsp;None</p>
+
+<h3 class="generalText">Roles:</h4>
+<h3 class="generalText">(Software) Development Engineer</h3>
 <p class="smallText">&emsp;&emsp;A software development engineer is a software engineer who is in charge of creating a particular software system or product. This could entail working with a group of other software engineers and developers to guarantee the product is created quickly and effectively, as well as designing, coding, testing, and debugging software. I would be a somewhat suitable member for this role but there are other teammates I have on our team that are more efficient and would create a better final product than I could as a Software Engineer.</p>
-    <h3 class="generalText">QA Engineer</h3>
-    <p class="smallText">&emsp;&emsp;A QA engineer, or quality assurance engineer, is responsible for testing and ensuring that a software product is of an exceptional quality and meets with the guidelines and criteria provided by the client and the development team. This could require designing and running test cases, as well as analyzing and presenting the outcomes of those tests. I would be quite suitable for this role because in my personal projects i ensure they are to the highest quality so this role would align with my values and how I work on projects.</p>
-    <h3 class="generalText">Project Manager</h3>
+<h3 class="generalText">QA Engineer</h3>
+<p class="smallText">&emsp;&emsp;A QA engineer, or quality assurance engineer, is responsible for testing and ensuring that a software product is of an exceptional quality and meets with the guidelines and criteria provided by the client and the development team. This could require designing and running test cases, as well as analyzing and presenting the outcomes of those tests. I would be quite suitable for this role because in my personal projects i ensure they are to the highest quality so this role would align with my values and how I work on projects.</p>
+<h3 class="generalText">Project Manager</h3>
 <p class="smallText">&emsp;&emsp;A project manager is in charge of organizing, directing, and planning the creation of a particular software project. This could involve identifying the projects goals and objectives with a team of developers and other stakeholders, developing a project plan, and making sure the project and its members stay on track and the projects stays within the budget.I believe I would also be suitable for this role because I have experience in leading projects and managing people and I find that as something I could do efficiently and at a high level.</p>
-    <h3 class="generalText">Product Manager</h3>
+<h3 class="generalText">Product Manager</h3>
 <p class="smallText">&emsp;&emsp;A product manager is responsible for identifying and pushing the strategy and vision for a specific product or product line. This could entail gathering and analyzing customer input, performing market research, and collaborating with a group of developers to define and rank features and functionalities. I believe I would not be suitable for this role because I have no prior experience in gathering and analyzing customer research or performing research so I dont think I would be a good fit for this role.
 </p>
-    <h3 class="generalText">Release Engineer</h3>
-        <p class="smallText">&emsp;&emsp;A release engineer is in charge of coordinating and managing the release of software applications to production environments. This could entail establishing and maintaining release processes and procedures, collaborating with other teams to plan and carry out the release, and working with development and QA teams to make sure the program is prepared for release. I would be a good fit for this role because I am good at communicating with people and working with others internally to guarantee a smooth and successful release</p> 
-        <br>      
+<h3 class="generalText">Release Engineer</h3>
+<p class="smallText">&emsp;&emsp;A release engineer is in charge of coordinating and managing the release of software applications to production environments. This could entail establishing and maintaining release processes and procedures, collaborating with other teams to plan and carry out the release, and working with development and QA teams to make sure the program is prepared for release. I would be a good fit for this role because I am good at communicating with people and working with others internally to guarantee a smooth and successful release</p> 
+<br>      
 <hr>
 
-  
 
-  </body>
-  </html>
+
+</body>
+</html>
